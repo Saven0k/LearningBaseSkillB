@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main class="main">
+        <h2>Калькулятор стоймости доставки</h2>
+        <form  action="" class="form">
+            <input type="text"  required name="name" class="name" id="name" placeholder="Название товара: ">
+            <input type="number" min="1" required  name="weight" id="weight" class="weight" placeholder="Вес товара (кг): ">
+            <input type="number" min="1" required  name="distance" id="distance" class="distance" placeholder="Расстояние доставки (км): ">
+            <button type="submit" class="button">Добавить товар</button>
+        </form>
+
+        <div class="result">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Название товара</th>
+                        <th>Вес (кг)</th>
+                        <th>Расстояние (км)</th>
+                        <th>Стоймость доставки</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>

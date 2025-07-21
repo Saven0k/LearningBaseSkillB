@@ -1,0 +1,66 @@
+.main {
+    .main_header {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        padding: 10px 20px;
+
+        .add_link {
+            padding: 8px 10px;
+            border-radius: 10px;
+            background-color: aqua;
+            font-size: 16px;
+            color: #fff;
+            transition: 0.5s;
+        }
+
+        .add_link {
+            transform: scale(1.1);
+        }
+    }
+
+    .storage {
+        width: 80%;
+        table {
+            display: flex;
+            gap: 5px;
+            color: #fff;
+            flex-direction: column;
+            width: 100%;
+            
+            thead {
+                background-color: #000;
+                color: #fff;
+                text-align: center;
+                padding: 10px 0;
+            }
+
+            tr {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                
+            }
+
+            tbody tr {
+                color: #000;
+                background-color: #fff;
+                text-align: center;
+                margin-top: 5px;
+
+                .button_delete {
+                    background-color: red;
+                    color: #fff;
+                    padding: 8px 10px;
+                    border-radius: 10px;
+                    transition: 1s;
+                }
+
+                .button_delete:hover {
+                    transform: scale(0.9);
+                }
+            }
+        }
+    }
+
+}

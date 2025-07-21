@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 6px;
+
+        input {
+            padding: 4px 20px;
+            border-radius: 20px;
+            width: 250px;
+        }
+
+        .button {
+            margin-top: 20px;
+            padding: 6px 9px;
+            background-color: red;
+            border-radius: 15px;
+            border: none;
+            font-size: 16px;
+            color: #fff;
+        }
+    }
+
+    .result {
+        margin-top: 50px;
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ccc;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+    }
+}

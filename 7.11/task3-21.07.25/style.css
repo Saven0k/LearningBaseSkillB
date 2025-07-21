@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 30px;
+    gap: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    button {
+        border: none;
+        color :#fff;
+        padding: 10px 15px;
+    }
+
+    .create {
+        background-color: green;
+    }
+
+    .search {
+        background-color: blue;
+    }
+}
+
+ol {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    li {
+        background-color: #818181;
+        width: 250px;
+        margin-left: 30px;
+        padding: 5px 7px;
+        font-size: 15px;
+    }
+}
+
+.color {
+    background-color: red;
+}
