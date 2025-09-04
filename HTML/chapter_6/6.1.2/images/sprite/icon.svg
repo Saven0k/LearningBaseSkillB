@@ -1,0 +1,62 @@
+<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_2_332)">
+        <g filter="url(#filter0_d_2_332)">
+            <path
+                d="M28 8C39.0457 8 48 16.9543 48 28C48 39.0457 39.0457 48 28 48C16.9543 48 8 39.0457 8 28C8 16.9543 16.9543 8 28 8Z"
+                fill="white" />
+        </g>
+        <path opacity="0.8" d="M20.8 21H16V25.666H20.8V21ZM30.401 21H25.601V25.666H30.401V21Z"
+            fill="#758592" />
+        <path opacity="0.64" d="M40.003 21H35.203V25.666H40.003V21Z" fill="#758592" />
+        <path opacity="0.8" d="M20.8 25.666H16V30.332H20.8V25.666Z" fill="#758592" />
+        <path opacity="0.8"
+            d="M25.597 25.666H20.797V30.332H25.597V25.666ZM30.401 25.666H25.601V30.332H30.401V25.666Z"
+            fill="#758592" />
+        <path opacity="0.64" d="M35.198 25.666H30.3979V30.332H35.198V25.666Z" fill="#758592" />
+        <path opacity="0.8"
+            d="M40.003 25.666H35.203V30.332H40.003V25.666ZM20.8 30.334H16V35H20.8V30.334Z"
+            fill="#758592" />
+        <path opacity="0.8" d="M25.597 30.334H20.797V35H25.597V30.334Z" fill="#758592" />
+        <path opacity="0.56" d="M30.401 30.334H25.601V35H30.401V30.334Z" fill="#758592" />
+        <path opacity="0.64"
+            d="M35.198 30.334H30.3979V35H35.198V30.334ZM40.0029 30.334H35.2029V35H40.0029V30.334Z"
+            fill="#758592" />
+        <g opacity="0.4">
+            <path d="M20.8 21H16V34.998H25.6V25.666H20.8V21Z" fill="url(#paint0_linear_2_332)" />
+            <path d="M30.4 21H25.6V34.998H35.2V25.666H30.4V21Z" fill="url(#paint1_linear_2_332)" />
+            <path d="M35.2 21H40V34.998H35.2V21Z" fill="url(#paint2_linear_2_332)" />
+        </g>
+    </g>
+    <defs>
+        <filter id="filter0_d_2_332" x="0" y="0" width="56" height="56" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+            <feOffset />
+            <feGaussianBlur stdDeviation="4" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_332" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_332" result="shape" />
+        </filter>
+        <linearGradient id="paint0_linear_2_332" x1="34.5" y1="17.663" x2="22.093" y2="36.246"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" />
+            <stop offset="1" stop-color="white" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="paint1_linear_2_332" x1="34.5" y1="17.663" x2="22.093" y2="36.246"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" />
+            <stop offset="1" stop-color="white" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="paint2_linear_2_332" x1="34.5" y1="17.663" x2="22.0929" y2="36.246"
+            gradientUnits="userSpaceOnUse">
+            <stop stop-color="white" />
+            <stop offset="1" stop-color="white" stop-opacity="0" />
+        </linearGradient>
+        <clipPath id="clip0_2_332">
+            <rect width="56" height="56" fill="white" />
+        </clipPath>
+    </defs>
+</svg>

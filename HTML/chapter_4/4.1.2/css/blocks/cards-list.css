@@ -1,0 +1,101 @@
+.cards-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 32px;
+
+}
+
+
+.cards-list__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    padding: 20px;
+    border-radius: 8px;
+    width: 286px;
+
+    background-image: url("../../images/card-images/Rectangle1.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: #1536ae;
+}
+
+.cards-list__item--second {
+    background-image: url("../../images/card-images/Rectangle2.png");
+}
+
+.cards-list__item--third {
+    background-image: url("../../images/card-images/Rectangle3.png");
+}
+
+.cards-list__item--fourth {
+    background-image: url("../../images/card-images/Rectangle4.png");
+}
+
+.cards-list__item--fifth {
+    background-image: url("../../images/card-images/Rectangle5.png");
+}
+
+.cards-list__item--sixth {
+    background-image: url("../../images/card-images/Rectangle6.png");
+}
+
+.cards-list__item--seventh {
+    background-image: url("../../images/card-images/Rectangle7.png");
+}
+
+.cards-list__item--eighth {
+    background-image: url("../../images/card-images/Rectangle8.png");
+}
+
+/* Вложенность чисто для красоты, так приятнее смотреть на код!!! 
+Если раскидаем то будет тяжко понять, что к чему, так как блоки 
+маленькие */
+
+.cards-list__header {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 260px;
+
+    .cards-list__ico {
+        width: 40px;
+        height: 40px;
+    }
+
+    .cards-list__title {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        color: #FFFFFF;
+
+    }
+}
+
+.cards-list__text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    vertical-align: bottom;
+    color: #FFFFFF;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.cards-list__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+
+    background-color: #476BF0;
+
+    padding: 14px;
+    border-radius: 8px;
+
+    text-decoration: none;
+}

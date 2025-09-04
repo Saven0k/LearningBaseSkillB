@@ -1,0 +1,99 @@
+.application-form {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.application-form__group {
+    border: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.application-form__group-title {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 120%;
+    color: #000000;
+    margin-bottom: 42px;
+}
+
+.application-form__wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    width: 100%;
+}
+
+.application-form__block {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: 560px;
+    justify-content: end;
+}
+
+.application-form__block--contacts {
+    gap: 42px;
+}
+
+.application-form__wrapper--row {
+    flex-direction: column;
+    gap: 60px;
+}
+
+.application-form__company {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items: start;
+    width: 100%;
+}
+
+.application-form__group--presentation .application-form__wrapper {
+    padding-top: 12px;
+}
+
+
+.direction-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.direction-list__item {
+    margin-bottom: 28px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.direction-list__item:last-child {
+    margin-bottom: 0;
+}
+
+.application-form__wrapper--radio {
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 0;
+}
+
+.application-form__group-title--exp {
+    margin-bottom: 28px;
+}
+
+.application-form__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.application-form__button {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 125%;
+    border: 1px solid #1919EF66;
+    color: #1919EF66;
+    border-radius: 60px;
+    padding: 11px;
+}

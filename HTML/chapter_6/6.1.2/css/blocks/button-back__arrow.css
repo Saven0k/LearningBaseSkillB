@@ -1,0 +1,25 @@
+.button-back__arrow {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 22px;
+    left: -24px;
+    background-color: #fff;
+    box-shadow: 2px 2px 20px 0px #101A3B1A;
+    border-radius: 50%;
+    padding: 14px;
+    border: none;
+    outline: none;
+    z-index: 10;
+}
+
+.button-back__arrow:hover {
+    color: #476BF0;
+}
+.button-back__arrow:focus {
+    color: #476BF0;
+}
+.button-back__arrow:disabled {
+    color: #777C9B;
+    background-color: #DBDFEB;
+}

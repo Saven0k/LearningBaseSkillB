@@ -27,77 +27,73 @@ document.querySelector(".inputs").querySelectorAll('.input').forEach(input => {
     filterFunc(input.value)
   })
 })
-
 const filterFunc = () => {
-  console.log(1);
+  console.log("Filtering started...");
 
-  setTimeout(() => {
-    if (title.value.length > 0) {
-      filterFilm("title", title.value)
-      genre.value = ''
-      year.value = ''
-      bool.value = 'true'
-      title.value = ''
-      return;
+  const filterParams = {
+    title: title.value || ' ',
+    genre: genre.value || ' ',
+    releaseYear: year.value || ' ',
+    isWatched: bool.value === " " // Преобразуем строку в boolean
+  };
+
+  filterFilm(filterParams);
+};
+
+async function filterFilm(params) {
+  try {
+    const url = new URL("https://sb-film.skillbox.cc/films");
+
+    if (params.title && params.title !== "null") {
+      url.searchParams.append("title", params.title);
     }
-    if (genre.value.length > 0) {
-      filterFilm("genre", genre.value)
-      title.value = ''
-      year.value = ''
-      bool.value = 'true'
-      genre.value = ''
-      return;
+    if (params.genre && params.genre !== "null") {
+      url.searchParams.append("genre", params.genre);
     }
-    if (year.value.length > 0) {
-      filterFilm("releaseYear", year.value)
-      genre.value = ''
-      title.value = ''
-      bool.value = 'true'
-      year.value = ''
-      return;
+    if (params.releaseYear && params.releaseYear !== "null") {
+      url.searchParams.append("releaseYear", params.releaseYear);
     }
-    if (bool.value.length > 0) {
-      filterFilm("isWatched", bool.value)
-      genre.value = ''
-      year.value = ''
-      title.value = ''
-      bool.value = 'true'
-      return;
+    if (params.isWatched !== undefined) {
+      url.searchParams.append("isWatched", params.isWatched);
     }
-  }, 1000)
+
+    const response = await fetch(url, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        email: "ovikdevil@gmail.com",
+      }
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const films = await response.json();
+    updateTable(films);
+  } catch (error) {
+    console.error("Error during filtering:", error);
+    const filmTableBody = document.getElementById("film-tbody");
+    filmTableBody.innerHTML = `<tr><td colspan="5">Error loading data: ${error.message}</td></tr>`;
+  }
 }
-
-
-async function filterFilm(pol, params) {
-  const filmsResponse = await fetch("https://sb-film.skillbox.cc/films", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      email: `ovikdevil@gmail.com`,
-    },
-    body: JSON.stringify({ // Данные передаем в `body`
-      title: title.value || "null",
-      genre: genre.value || "null",
-      releaseYear: year.value || "null",
-      isWatched: bool.value || true, // Лучше использовать true/false вместо "Да"/"Нет"
-    }),
-  });
-  const films = await filmsResponse.json();
-
+function updateTable(films) {
   const filmTableBody = document.getElementById("film-tbody");
-
-  // Clear table body first
   filmTableBody.innerHTML = "";
 
-  // Then add new rows
-  films.forEach((film, index) => {
+  if (films.length === 0) {
+    filmTableBody.innerHTML = "<tr><td colspan='5'>No films found</td></tr>";
+    return;
+  }
+
+  films.forEach(film => {
     const row = document.createElement("tr");
     row.innerHTML = `
       <td>${film.title}</td>
       <td>${film.genre}</td>
       <td>${film.releaseYear}</td>
       <td>${film.isWatched ? "Да" : "Нет"}</td>
-      <td><button class="deleteFIlm" onclick="deleteFilm(film.id)">Удалить</button></td>
+      <td><button class="deleteFIlm" onclick="deleteFilm('${film.id}')">Удалить</button></td>
     `;
     filmTableBody.appendChild(row);
   });
@@ -128,7 +124,7 @@ async function addFilm(film) {
   // films.push(film);
   // localStorage.setItem("films", JSON.stringify(films));
 
-  // console.log(film);
+  // console.log(film); ИЛИ ИЛИ
   await fetch("https://sb-film.skillbox.cc/films", {
     method: "POST",
     headers: {
@@ -141,7 +137,7 @@ async function addFilm(film) {
 }
 
 async function renderTable() {
-  // const films = JSON.parse(localStorage.getItem("films")) || [];
+  // const films = JSON.parse(localStorage.getItem("films")) || []; Вопрос большой на счет такого
   const filmsResponse = await fetch("https://sb-film.skillbox.cc/films", {
     headers: {
       email: "ovikdevil@gmail.com",
@@ -151,10 +147,10 @@ async function renderTable() {
 
   const filmTableBody = document.getElementById("film-tbody");
 
-  // Clear table body first
+  // База, что бы сразу и красиво
   filmTableBody.innerHTML = "";
 
-  // Then add new rows
+  // СРазу заполнили
   films.forEach((film, index) => {
     const row = document.createElement("tr");
     row.innerHTML = `
@@ -169,9 +165,11 @@ async function renderTable() {
   });
 }
 
+// Сразу при нажатии
 document
   .getElementById("film-form")
   .addEventListener("submit", handleFormSubmit);
 
-// Display films on load
+
+// НАРИСОВАЛИ
 renderTable();

@@ -1,0 +1,40 @@
+.header {
+    position: fixed;
+    z-index: 10;
+    background-color: inherit;
+    width: 100%;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 28px;
+}
+
+.header__right-block {
+    display: flex;
+    gap: 0;
+    align-items: center;
+}
+
+.header__right-block__content{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: end;
+}
+
+.header__right-block__ads {
+    color: #777B87;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.header__right-block__desc {
+    color: #A8ACB7;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}

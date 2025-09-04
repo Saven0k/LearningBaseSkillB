@@ -1,0 +1,143 @@
+.banners-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 32px;
+
+  /* Чисто для разделения блоков  */
+  margin-bottom: 300px;
+}
+
+.banners-list__item {
+  width: 604px;
+  min-height: 300px;
+
+  display: flex;
+  gap: 20px;
+
+  background-color: #E7EFFF;
+  border-radius: 12px;
+
+  padding: 32px;
+}
+
+.banners-list__item--second {
+  background-color: #476BF0;
+  color: #fff;
+}
+.banners-list__item--second .banners-list__creadits {
+  color: #FFFFFF80;
+  border: 1px solid #FFFFFF80;
+}
+
+.banners-list__item--third {
+  background-color: #CFF6E7;
+  color: #1E222E;
+}
+
+.banners-list__item--fourth {
+  background-color: #C4E7FF;
+  color: #1E222E;
+}
+
+.banners-list__item--second .banners-list__link {
+  background-color: #fff;
+  color: #476BF0;
+}
+
+
+.banners-list__text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+}
+
+.banners-list__creadits {
+  border: 1px solid rgba(30, 34, 46, 0.5);
+  border-radius: 4px;
+  color: rgba(30, 34, 46, 0.5);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  margin: 0 0 12px 0;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 66px;
+}
+
+.banners-list__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+
+  margin: 0 0 12px 0;
+}
+
+.banners-list__disc {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+
+}
+
+.banners-list__link {
+  margin-top: auto;
+  width: 140px;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  background-color: #476BF0;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+}
+
+.banners-list__image {
+  width: 280px;
+  height: 180px;
+}
+
+.banners-list--alternative {
+  gap:32px;
+}
+
+
+.banners-list--alternative .banners-list__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0px;
+  width: 286px;
+  min-height: 400px;
+  padding: 32px 20px 20px 20px;
+}
+
+.banners-list--alternative .banners-list__text-block {
+  align-items: center;
+  justify-content: start;
+}
+
+.banners-list--alternative .banners-list__creadits {
+  margin: 0 0 8px 0;
+}
+
+.banners-list--alternative .banners-list__title {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+
+.banners-list--alternative .banners-list__disc {
+  text-align: center;
+}
+.banners-list--alternative .banners-list__image {
+  width: 210px;
+  height: 135px;
+  margin: 0;
+  margin-top: 40px;
+}

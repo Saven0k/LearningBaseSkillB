@@ -1,0 +1,17 @@
+#progress-bar {
+    height: 20px;
+    max-width: 500px;
+    background-color: aquamarine;
+    /** Ваш цвет ужасен*/
+    border-radius: 10px;
+    /** Без этого страшно смотреть*/
+
+    /** Базовый transform */
+    transform-origin: left center;
+    transform: scaleX(0);
+    transition: transform 2s linear;
+}
+
+.rogress-bar__timer {
+    margin-top: 10px;
+}

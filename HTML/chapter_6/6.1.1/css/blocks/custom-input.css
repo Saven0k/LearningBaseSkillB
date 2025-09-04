@@ -1,0 +1,139 @@
+.custom-input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.custom-input--checkbox {
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
+.custom-input__field {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  padding: 0 32px 12px 0;
+  font-size: 18px;
+  line-height: 1.2;
+  border-bottom: 1px solid #CACACA;
+}
+
+.custom-input__field::placeholder {
+  color: #9B9B9B;
+}
+
+
+.custom-input__label {
+  color: #1919EF;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  margin-bottom: 4px;
+}
+
+.custom-input__icon {
+  position: absolute;
+  bottom: 12px;
+  right: 0;
+}
+
+.custom-input__textarea {
+  padding: 0;
+  width: 100%;
+  min-height: 102px;
+  border: none;
+  border-bottom: 1px solid #CACACA;
+  outline: none;
+
+}
+
+.custom-input__checkbox {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  flex-shrink: 0;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  outline: none;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.custom-input__checkbox:checked {
+  background-color: #fff;
+  border-color: #007bff;
+}
+
+.custom-input__checkbox:checked::after {
+  content: "✓";
+  position: absolute;
+  color: #007bff;
+  font-size: 14px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-input__checkbox:hover {
+  border-color: #007bff;
+}
+
+.custom-input__checkbox-label {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 125%;
+  cursor: pointer;
+  margin: 0;
+  text-align: left;
+}
+
+.custom-input--radio {
+  flex-direction: row;
+  justify-content: start;
+  gap: 20px;
+}
+
+.custom-input__radio {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.custom-input__radio:checked {
+  border-color: #007bff;
+  background-color: #007bff;
+}
+
+.custom-input__radio:checked:before {
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 8px;
+  height: 8px;
+}
+
+.custom-input__checkbox-label--date {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  color: #9B9B9B;
+}

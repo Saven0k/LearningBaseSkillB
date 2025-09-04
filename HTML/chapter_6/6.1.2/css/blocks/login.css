@@ -1,0 +1,135 @@
+.login {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 76px;
+    flex-direction: column;
+    padding-bottom: 104px;
+}
+
+.login-form {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+.login__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 2px 24px 0px #7F225505;
+    padding: 32px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    margin-bottom: 32px;
+}
+
+.login-form__title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1E222E;
+    margin: 0 36px 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.login-form__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 4px;
+}
+
+.login-form__button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: #476BF0;
+    padding: 14px 168px;
+    border-radius: 60px;
+    border: none;
+    outline: none;
+    margin-bottom: 4px;
+}
+
+.login-button:hover {
+    background-color: #3356D7;
+}
+
+.login-button:focus {
+    background-color: #2143C1;
+}
+
+.login-button:disabled {
+    background-color: #DBDFEB;
+    color: #777C9B;
+}
+
+.login__form-after__block-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1E222E;
+    margin: 0 85px 0;
+    text-align: center;
+}
+
+.login__form-after__block {
+    margin-bottom: 32px;
+
+}
+
+.login__form-after__block-link:hover {
+    color: #3356D7;
+}
+
+.login__form-footer {
+    background: linear-gradient(90deg, #F5F6FA 0%, #F7F1F7 51.5%, #F5F7FD 100%);
+    padding: 32px 107px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 450px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+
+.login__form-footer__link {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+}
+
+.login__form-footer__text,
+.login__form-footer__name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #7E7D87;
+}
+
+.register-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.register-block__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #476BF0;
+
+}
+
+.register-block__link:hover {
+    color: #3356D7;
+}
